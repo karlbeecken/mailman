@@ -1,3 +1,3 @@
 const adminEmail = process.env.MAILMAN_ADMIN;
 
-export const isAdmin = email => adminEmail === email;
+export const isAdmin = email => email.includes(adminEmail);
